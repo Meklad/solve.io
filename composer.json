@@ -1,0 +1,20 @@
+{
+    "name": "owllog/solve.io",
+    "description": "Problem Solving",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Owllog\\SolveIo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmed Meklad",
+            "email": "ahmed.meklad.news@gmail.com"
+        }
+    ]
+}
