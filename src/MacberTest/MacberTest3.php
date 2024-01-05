@@ -49,12 +49,12 @@ class MacberTest3
                     e.salary,
                     e.departmentId,
                     d.name AS department,
-                    RANK() OVER (PARTITION BY e.departmentId ORDER BY e.salary DESC) AS salaryRank
+                    DENSE_RANK() OVER (PARTITION BY e.departmentId ORDER BY e.salary DESC) AS salaryRank
                 FROM
                     Employee e
                     JOIN Department d ON e.departmentId = d.id
             )
-
+            
             SELECT
                 department,
                 employee,
