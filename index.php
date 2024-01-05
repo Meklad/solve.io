@@ -4,7 +4,8 @@ require "vendor/autoload.php";
 
 use Owllog\SolveIo\MacberTest\{
     MacberTest1,
-    MacberTest2
+    MacberTest2,
+    MacberTest3
 };
 
 
@@ -27,3 +28,14 @@ dump("Problem Two [MacberTest2]");
 dump(MacberTest2::group([1, 2, 3, 4, 5], 2));
 dump(MacberTest2::group([1, 2, 3, 4, 5], 3));
 dump(MacberTest2::group([1, 2, 3, 4, 5], 6));
+
+# Problem Three [MacberTest3]:
+dump("Problem Three [MacberTest3]");
+
+$highEarnersFinder = new MacberTest3();
+
+$highEarnersFinder->insertData();
+
+$result = $highEarnersFinder->findHighEarners();
+
+dd($result);
