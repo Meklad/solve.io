@@ -6,7 +6,6 @@ a. Clone the repo to you local machine:
 ```bash
 git clone git@github.com:Meklad/solve.io.git
 ```
-```
 b. Run Composer Install:
 ```bash
 composer install
