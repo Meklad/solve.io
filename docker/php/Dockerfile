@@ -7,3 +7,4 @@ RUN docker-php-ext-install pdo_mysql
 # Set the working directory
 WORKDIR /var/www/html
 
+Run composer install
